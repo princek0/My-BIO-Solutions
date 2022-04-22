@@ -13,7 +13,7 @@ collisions.pop()
 
 combinations = list(combinations([i for i in range(1, p + 1)], 2))
 for i in range(len(collisions)):
-    if collisions_reversed[i] in all:
+    if collisions_reversed[i] in combinations:
         combinations.remove((collisions_reversed[i]))
 
 for i in range(len(combinations)):
